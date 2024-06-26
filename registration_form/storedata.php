@@ -32,16 +32,16 @@ $sql="INSERT INTO `users`( `username`, `email`, `password`) VALUES ('$username',
 if($flag==0){
 	mysqli_query($conn,$sql);
 	echo "<script>alert('Registration Complete');</script>";
-	echo"<script>window.location.href='https://localhost/HealBharat/registration/registration.html';</script>";
+	echo"<script>window.location.href='registration.html';</script>";
 	
 }
 elseif($flag==1){
 	echo "<script>alert('invalid email')</script>";
-	echo"<script>window.location.href='https://localhost/HealBharat/registration/registration.html';</script>";
+	echo"<script>window.location.href='registration.html';</script>";
 }
 else{
 	echo "<script>alert('field cannot be empty')</script>";
-	echo"<script>window.location.href='https://localhost/HealBharat/registration/registration.html';</script>";
+	echo"<script>window.location.href='registration.html';</script>";
 
 }
 }
